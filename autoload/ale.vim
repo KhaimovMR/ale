@@ -89,7 +89,7 @@ function! ale#ShouldDoNothing(buffer) abort
 
     " Do nothing from CtrlP buffers with CtrlP-funky.
     if exists(':CtrlPFunky') is 2
-    \&& getbufvar(a:buffer, '&l:statusline') =~# 'CtrlPMode.*funky'
+    \&& getbufvar(a:buffer, '&l:statusline') =~# 'CtrlP.*funky'
         return 1
     endif
 
